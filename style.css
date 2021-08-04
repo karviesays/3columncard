@@ -133,7 +133,7 @@ body {
 
     .panel {
         max-width:90rem;
-        width: 80%;
+        width: 70%;
         flex-flow: row nowrap;
         justify-content: center;
     }
