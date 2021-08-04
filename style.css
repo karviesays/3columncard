@@ -1,0 +1,147 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* End Fonts */
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --transwhite:hsla(0, 0%, 100%, 0.75);
+    --verylightgray:hsl(0, 0%, 95%);
+}
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* End Reset */
+/* Utilities */
+h1,
+a {
+    color: var(--verylightgray);
+}
+
+p {
+    color: var(--transwhite);
+}
+
+.box1 {
+    background: var(--bright-orange);
+}
+
+.box2 {
+    background: var(--dark-cyan);
+}
+
+.box3 {
+    background: var(--verydarkcyan);
+}
+.btn1 {
+    color: var(--bright-orange);
+}
+.btn2 {
+    color:var(--dark-cyan);
+}
+
+.btn3 {
+    color: var(--verydarkcyan);
+}
+
+body {
+    background: var(--verylightgray);
+    font-size: 15px;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* End Utilities */
+
+/* Card */
+.panel {
+    max-width: 23.438rem;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    border-radius: .30rem;
+    margin: 2rem auto;
+}
+
+.card {
+    padding: 3rem 4rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 400;
+}
+
+header {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+.icon {
+    max-width: 100%;
+}
+
+.main-headings {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+}
+
+.main-para {
+    line-height: 2rem;
+    padding-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: .75rem 2rem;
+    border-radius: 40px;
+    margin-top: 1rem;
+    background: var(--verylightgray);
+    margin: 1.2rem 0;
+    border: 1px solid var(--verylightgray);
+}
+/* End Card */
+
+/* Button Hover */
+.btn1:hover,
+.btn1:active{
+    background: var(--bright-orange);
+    color: var(--transwhite); 
+}
+
+.btn2:hover,
+.btn2:active{
+    background: var(--dark-cyan);
+    color: var(--transwhite);
+}
+
+.btn3:hover,
+.btn3:active{
+    background: var(--verydarkcyan);
+    color: var(--transwhite);
+}
+/* End btn hover */
+
+@media (min-width: 1000px) {
+
+    .panel {
+        max-width:90rem;
+        width: 80%;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .card {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .main-para {
+        margin-bottom: 1rem;
+    }
+}
