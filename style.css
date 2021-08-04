@@ -77,7 +77,7 @@ body {
     font-size: 400;
 }
 
-header {
+.header {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
 }
@@ -86,7 +86,7 @@ header {
     max-width: 100%;
 }
 
-.main-headings {
+.card-headings {
     font-size: 2rem;
     text-transform: uppercase;
     padding: 1.5rem 0;
